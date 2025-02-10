@@ -1,67 +1,19 @@
- body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        section {
-            background: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            clear: both;
-        }
-
-
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: #007BFF; /* Color azul */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -71,4 +23,52 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Color dorado al pasar el mouse */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+h1, h2 {
+    margin: 0 0 15px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
