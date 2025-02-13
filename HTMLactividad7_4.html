@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Cámaras de Fotos</title>
+</head>
+<body>
+
+<h2>Búsqueda de Cámaras de Fotos</h2>
+<form action="/buscar-camaras" method="post" novalidate>
+    <label for="nombre-modelo">Nombre o Modelo:</label>
+    <input type="text" id="nombre-modelo" name="nombre-modelo" placeholder="Introduce el nombre o modelo de la cámara">
+
+    <label for="tipo-camara">Tipo de Cámara:</label>
+    <select id="tipo-camara" name="tipo-camara">
+        <option value="" disabled selected>Selecciona un tipo de cámara</option>
+        <option value="reflex">Cámara Reflex</option>
+        <option value="sin-espejo">Cámara Sin Espejo</option>
+        <option value="compacta">Cámara Compacta</option>
+        <option value="instantanea">Cámara Instantánea</option>
+    </select>
+
+    <label for="rango-precio">Rango de Precio:</label>
+    <input type="number" id="rango-precio-min" name="rango-precio-min" placeholder="Precio Mínimo" min="0">
+    <input type="number" id="rango-precio-max" name="rango-precio-max" placeholder="Precio Máximo" min="0">
+
+    <label for="marca">Marca:</label>
+    <select id="marca" name="marca">
+        <option value="" disabled selected>Selecciona una marca</option>
+        <option value="canon">Canon</option>
+        <option value="nikon">Nikon</option>
+        <option value="sony">Sony</option>
+        <option value="fuji">Fujifilm</option>
+        <option value="panasonic">Panasonic</option>
+    </select>
+
+    <button type="submit">Buscar Cámaras</button>
+</form>
+
+</body>
+</html>
