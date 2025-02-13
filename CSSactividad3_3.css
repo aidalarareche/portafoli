@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Color de Texto</title>
+    <meta name="description" content="Ejemplo de color de texto en un párrafo">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Color de fondo claro */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd; /* Borde gris claro */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        h1 {
+            color: #00698f; /* Color azul oscuro */
+            font-size: 36px; /* Tamaño de fuente grande */
+            margin-bottom: 20px; /* Espacio entre el título y el contenido */
+        }
+        p {
+            font-size: 18px; /* Tamaño de fuente mediano */
+            line-height: 1.5; /* Espacio entre líneas */
+            margin-bottom: 20px; /* Espacio entre párrafos */
+        }
+        p#pluton {
+            color: blue; /* Color del texto */
+            font-weight: bold; /* Negrita */
+            background-color: #f7f7f7; /* Fondo gris claro */
+            padding: 10px; /* Espacio interior */
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Planetas del Sistema Solar</h1>
+<p>Mercurio es el planeta más cercano al Sol.</p>
+<p>Venus es conocido como el planeta hermano de la Tierra.</p>
+<p id="pluton">Plutón es considerado un planeta enano.</p>
+<p>Júpiter es el planeta más grande del sistema solar.</p>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Variables CSS</title>
+    <style>
+        /* Definimos variables CSS */
+        :root {
+            --color-principal: #D95B43; /* Color principal */
+            --color-texto: #333; /* Color del texto */
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Estilos para el título */
+        h1 {
+            color: var(--color-principal); /* Aplicamos la variable al título */
+        }
+
+        /* Estilos para el párrafo */
+        p {
+            color: var(--color-texto); /* Aplicamos la variable al texto */
+        }
+
+        /* Estilos para los hipervínculos */
+        a {
+            color: var(--color-principal); /* Aplicamos la variable a los hipervínculos */
+            text-decoration: none; /* Sin subrayado */
+        }
+
+        /* Estilos para los hipervínculos al pasar el ratón */
+        a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi página web</h1>
+    <p>
+        Este es un ejemplo de cómo usar <a href="https://www.ejemplo.com">hipervínculos</a> en un párrafo.
+        Puedes visitar <a href="https://www.otroejemplo.com">otro ejemplo</a> para más información.
+    </p>
+</body>
+</html>

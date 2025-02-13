@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo con CSS Variables</title>
+    <style>
+        /* Definimos la altura y anchura del rectángulo usando variables CSS */
+        .rectangulo {
+            /* Altura del rectángulo */
+            --altura: 150px;
+            /* Anchura del rectángulo: el doble de la altura */
+            width: calc(2 * var(--altura));
+            height: var(--altura);
+            /* Color de fondo */
+            background-color: #D95B43;
+            /* Borde del rectángulo */
+            border: 2px solid #C02942;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangulo"></div>
+</body>
+</html>

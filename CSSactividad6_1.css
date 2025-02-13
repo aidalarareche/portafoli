@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Ejemplo de Header con Búsqueda</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f8f9fa;
+        }
+
+        .header__logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav__link {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        .nav__link:hover {
+            color: #0056b3;
+        }
+
+        .header__busqueda {
+            display: flex;
+        }
+
+        .header__input {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+
+        .header__boton-buscar {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            margin-left: 0.5rem;
+        }
+
+        .header__boton-buscar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Mi Logo</div>
+        <nav class="nav">
+            <a href="#inicio" class="nav__link">Inicio</a>
+            <a href="#servicios" class="nav__link">Servicios</a>
+            <a href="#contacto" class="nav__link">Contacto</a>
+        </nav>
+        <form class="header__busqueda" action="#" method="get">
+            <input type="text" class="header__input" placeholder="Buscar..." aria-label="Buscar" aria-labelledby="buscar-label">
+            <button type="submit" class="header__boton-buscar" aria-label="Buscar">Buscar</button>
+        </form>
+    </header>
+</body>
+</html>
