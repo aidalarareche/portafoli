@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentarios</title>
+    <style>
+        .comentarios {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            background-color: #f9f9f9;
+        }
+
+        .comentarios__titulo {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .comentario {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comentario:last-child {
+            border-bottom: none;
+        }
+
+        .comentario__autor {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .comentario__texto {
+            margin: 0;
+        }
+
+        .comentarios__formulario {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .comentarios__input {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+
+        .comentarios__boton-enviar {
+            padding: 0.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+
+        .comentarios__boton-enviar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="comentarios">
+        <h2 class="comentarios__titulo">Comentarios</h2>
+
+        <div class="comentario">
+            <div class="comentario__autor">Juan Pérez</div>
+            <p class="comentario__texto">¡Este es un gran artículo! Me ha ayudado mucho.</p>
+        </div>
+
+        <div class="comentario">
+            <div class="comentario__autor">María López</div>
+            <p class="comentario__texto">Interesante perspectiva, gracias por compartir.</p>
+        </div>
+
+        <form class="comentarios__formulario" action="#" method="post">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" class="comentarios__input" placeholder="Tu nombre" required>
+            <label for="comentario">Escribe tu comentario:</label>
+            <textarea id="comentario" class="comentarios__input" placeholder="Escribe tu comentario..." required></textarea>
+            <button type="submit" class="comentarios__boton-enviar">Enviar Comentario</button>
+        </form>
+    </section>
+</body>
+</html>

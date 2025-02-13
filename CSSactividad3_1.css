@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras del Supermercado</title>
+    <meta name="description" content="Lista de compras del supermercado">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul.lista-compras {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.lista-compras li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .producto-urgente {
+            background-color: #ffcccc; /* Fondo claro para resaltar */
+            color: red;
+        }
+        .producto-disponible {
+            background-color: #ccffcc; /* Fondo claro para resaltar */
+            color: green;
+        }
+        .producto-poco-urgente {
+            background-color: #ffffcc; /* Fondo claro para resaltar */
+            color: orange;
+        }
+        .producto-no-urgente {
+            background-color: #e6ccff; /* Fondo claro para resaltar */
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Lista de Compras</h1>
+<ul class="lista-compras">
+    <li>Agua</li>
+    <li class="producto-urgente">Fresas</li>
+    <li class="producto-disponible">Kiwi</li>
+    <li>Galletas</li>
+    <li class="producto-poco-urgente">Bananas</li>
+    <li class="producto-no-urgente">Uvas</li>
+    <li>Leche</li>
+</ul>
+
+</body>
+</html>
